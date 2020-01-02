@@ -2,6 +2,7 @@
 
 {% block isi %}
     {% for x in data %}
+<div class="tampil">
        	<p>Nama: {{ x.nama }}</p>
        	<p>Kelas: {{ x.kelas }}</p>
        	<p>{{ x.jawaban1 }}</p>
@@ -15,5 +16,14 @@
        	<p>{{ x.jawaban9 }}</p>
        	<p>{{ x.jawaban10 }}</p>
        	<br>
+</div>
     {% endfor %}
+{% endblock %}
+
+{% block head %}
+  <style>
+    .tampil p {
+      white-space: pre-wrap;
+    }
+  </style>
 {% endblock %}
