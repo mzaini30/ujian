@@ -1,0 +1,42 @@
+{% extends 'layout/default.twig' %}
+
+{% block isi %}
+
+    <p><strong>Edit Soal</strong></p>
+
+    <form action="" method="post">
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal1 }}" name="soal1">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal2 }}" name="soal2">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal3 }}" name="soal3">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal4 }}" name="soal4">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal5 }}" name="soal5">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal6 }}" name="soal6">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal7 }}" name="soal7">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal8 }}" name="soal8">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal9 }}" name="soal9">
+        </div>
+    	<div class="form-group">
+    		<input type="text" class="form-control" value="{{ data.soal10 }}" name="soal10">
+        </div>
+    	<div class="form-group">
+			<input type="submit" value="Simpan" class="btn btn-success">
+    	</div>
+    </form>
+{% endblock %}

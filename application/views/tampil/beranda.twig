@@ -1,0 +1,19 @@
+{% extends 'layout/default.twig' %}
+
+{% block isi %}
+    {% for x in data %}
+       	<p>Nama: {{ x.nama }}</p>
+       	<p>Kelas: {{ x.kelas }}</p>
+       	<p>{{ x.jawaban1 }}</p>
+       	<p>{{ x.jawaban2 }}</p>
+       	<p>{{ x.jawaban3 }}</p>
+       	<p>{{ x.jawaban4 }}</p>
+       	<p>{{ x.jawaban5 }}</p>
+       	<p>{{ x.jawaban6 }}</p>
+       	<p>{{ x.jawaban7 }}</p>
+       	<p>{{ x.jawaban8 }}</p>
+       	<p>{{ x.jawaban9 }}</p>
+       	<p>{{ x.jawaban10 }}</p>
+       	<br>
+    {% endfor %}
+{% endblock %}

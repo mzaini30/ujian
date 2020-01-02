@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block judul %}Ujian{% endblock %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="{{ site_url() }}aset/vendor/bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		* {
+			word-wrap: break-word;
+		}
+		
+		body {
+			margin-top: 70px;
+		}
+
+		.navbar-fixed-bottom table {
+			margin-bottom: 0;
+		}
+
+		.navbar-fixed-bottom .btn {
+			width: 100%;
+		}
+
+		.sembunyi {
+			display: none;
+		}
+	</style>
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="{{ site_url() }}" class="navbar-brand">Ujian</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		{% block isi %}{% endblock %}
+	</div>
+	{% block bawah %}{% endblock %}
+	<script src="{{ site_url() }}aset/vendor/jquery/jquery.min.js"></script>
+	<script>
+		$.expr[':'].contains = $.expr.createPseudo(function(arg){
+			return function(elem){
+				return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0
+			}
+		});
+	</script>
+	{% block skrip %}{% endblock %}
+</body>
+</html>

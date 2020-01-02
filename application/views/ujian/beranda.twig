@@ -1,0 +1,57 @@
+{% extends 'layout/default.twig' %}
+
+{% block isi %}
+    <form action="" method="post">
+    	<div class="form-group">
+    		<label for="">Nama</label>
+    		<input type="text" class="form-control" name="nama" required="">
+    	</div>
+    	<div class="form-group">
+    		<label for="">Kelas</label>
+    		<input type="text" class="form-control" name="kelas" required="">
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal1 }}</label>
+    		<textarea name="jawaban1" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal2 }}</label>
+    		<textarea name="jawaban2" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal3 }}</label>
+    		<textarea name="jawaban3" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal4 }}</label>
+    		<textarea name="jawaban4" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal5 }}</label>
+    		<textarea name="jawaban5" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal6 }}</label>
+    		<textarea name="jawaban6" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal7 }}</label>
+    		<textarea name="jawaban7" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal8 }}</label>
+    		<textarea name="jawaban8" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal9 }}</label>
+    		<textarea name="jawaban9" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+    		<label for="">{{ data.soal10 }}</label>
+    		<textarea name="jawaban10" id="" cols="30" rows="10" class="form-control"></textarea>
+    	</div>
+    	<div class="form-group">
+			<input type="submit" value="Selesai" class="btn btn-success">
+    	</div>
+    </form>
+{% endblock %}
