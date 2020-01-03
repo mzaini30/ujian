@@ -1,0 +1,23 @@
+{% extends 'layout/default.twig' %}
+
+{% block isi %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Jumlah</th>
+                <th>Rincian</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for x in data %}
+                <tr>
+                    <td>{{ x.nama }}</td>
+                    <td>{{ x.nilai1 + x.nilai2 + x.nilai3 + x.nilai4 + x.nilai5 }}</td>
+                    <td>{{ x.nilai1 }} &bull; {{ x.nilai2 }} &bull; {{ x.nilai3 }} &bull; {{ x.nilai4 }} &bull; {{ x.nilai5 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p><a href="/berjuanglahtsubasa" class="btn btn-default">Edit lagi &rarr;</a></p>
+{% endblock %}

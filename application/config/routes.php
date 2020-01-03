@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'ujian';
 $route['lalala'] = 'ujian/edit';
-$route['mahasiswa'] = 'ujian/tampil';
+$route['berjuanglahtsubasa'] = 'ujian/tampil';
+$route['tampil-selesai'] = 'ujian/tampil_selesai';
+$route['nilai/(:any)/(:any)'] = 'ujian/nilai/$1/$2';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
